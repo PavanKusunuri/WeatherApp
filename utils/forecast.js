@@ -15,11 +15,11 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        response.body.daily.data[0].summary +
+        response.body.current.weather_descriptions +
           "It is currently " +
           response.body.current.temperature +
           "degrees out.There is a " +
-          response.body.currently.precipProbability +
+          response.body.current.precip +
           "% chance of Rain."
       );
     }
