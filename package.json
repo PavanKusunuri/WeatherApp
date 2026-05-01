@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "description": "Animated React weather app using free Open-Meteo APIs",
   "type": "module",
+  "homepage": "https://YOUR-USERNAME.github.io/WeatherApp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR-USERNAME/WeatherApp.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && git add dist -f && git commit -m 'Deploy to GitHub Pages' && git subtree push --prefix dist origin gh-pages"
   },
   "author": "PavanKusunuri",
   "license": "ISC",
